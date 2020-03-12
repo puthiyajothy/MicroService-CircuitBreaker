@@ -30,7 +30,7 @@ public class AllocationCommand extends HystrixCommand<Allocation[]> {
 				"http://localhost:8082/services/employeebyid/" + employee.getId(), HttpMethod.GET, httpEntity,
 				Allocation[].class);
 		return responseEntity.getBody();
-
+		
 	}
 	
 	@Override
